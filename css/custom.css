@@ -19,11 +19,10 @@ p{
   float:right;
 }
 .padding{
-  padding: 0 7rem ;
+  padding: 0 9rem ;
 }
 .half{
   width: 50%;
-  float: left;
 }
 
 .img-center{
@@ -40,6 +39,8 @@ header{
   background-color: #0d325a;
   width: 100%;
   color: white;
+  height: 40vh;
+  position: relative;
 }
 header::after{
   display: grid;
@@ -69,6 +70,7 @@ nav * {
 .menu > div{
   padding-top: 40px;
 }
+/* BOTTONE IN ALTO A DESTRA DEL MENU*/
 
 .menu .btn-green{
   background-color: #7fb802;
@@ -78,11 +80,6 @@ nav * {
   width: 100px;
   text-align: center;
 }
-
-
-
-
-
 
 .img-header img{
   width: 100%;
@@ -103,12 +100,18 @@ nav * {
   padding: 12px;
   width: 200px;
   text-align: center;
+
+}
+.img-header{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 
 
 
-
+/* SEZIONE RIGA GRIGIA */
 
 
 .grigio{
@@ -121,6 +124,7 @@ nav * {
 
 
 
+/* SEZIONE RIGA DIVISA IN 3 COLONNE CON IMMAGINI */
 
 
 .colonne:after{
@@ -128,19 +132,16 @@ nav * {
   content: '';
   clear: both;
 }
+
 .colonne{
   margin-top: 30px;
 }
-
-
 
 .colonna{
   width: calc(100% / 3);
   text-align: center;
   padding: 1rem;
 }
-
-
 
 .colonna h4{
   height: 70px;
@@ -149,20 +150,47 @@ nav * {
   font-size: 2rem;
 }
 
-
 .colonna hr{
+  display: block;
   width: 40px;
   border:solid 1px;
-  margin-bottom: 40px;
+  margin:40px;
+
+}
+
+.colonna img{
+  width: 160px;
+  height: 160px;
 }
 
 
+
+
+/* SEZIONE IMMAGINE E TESTO 50-50 */
 
 .test{
   margin-top: 60px;
 }
 
+.test::after{
+  display: grid;
+  content: '';
+  clear: both;
+}
+
 .test > .half > p{
   margin: 40px 0;
 
+}
+
+
+
+/* SEZIONE IMMAGINE E TESTO 50-50 MA CON FONDO BLU */
+
+
+.blue{
+  background-color: rgb(16, 34, 87);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
