@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+
+
+
 *{
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,13 +79,39 @@ nav * {
 
 
 
+
+
 .colonne:after{
   display: grid;
   content: '';
   clear: both;
 }
 
+
+
+
 .colonna{
-  width: 32%;
-  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.colonna img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.colonna h4{
+  height: 70px;
+  color: #7fb802;
+  margin: 40px 0;
+  font-size: 2rem;
+}
+
+.colonna hr{
+  width: 40px;
+  border:solid 2px;
+  margin-bottom: 40px;
 }
