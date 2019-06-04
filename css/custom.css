@@ -10,36 +10,44 @@ p{
 
   line-height: 2rem;
 }
-
-
 .left {
   float:left;
 }
 .right{
   float:right;
 }
+
 .padding{
-  padding: 0 9rem ;
+  max-width: 1300px;
+  margin:auto;
+  padding:3rem;
 }
+
 .half{
   width: 50%;
 }
-
 .img-center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+.img-full{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
 
 
 
 
 header{
-  background-color: #0d325a;
   width: 100%;
   color: white;
-  height: 40vh;
+  height: 44vh;
   position: relative;
 }
 header::after{
@@ -108,7 +116,9 @@ nav * {
   right: 0;
 }
 
-
+.sfondo-header{
+  background-color: #0d325a;
+}
 
 
 /* SEZIONE RIGA GRIGIA */
@@ -147,14 +157,14 @@ nav * {
   height: 70px;
   color: #7fb802;
   margin: 40px 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .colonna hr{
   display: block;
   width: 40px;
   border:solid 1px;
-  margin:40px;
+  margin:auto;
 
 }
 
@@ -163,6 +173,9 @@ nav * {
   height: 160px;
 }
 
+.colonna p{
+  margin-top: 40px;
+}
 
 
 
@@ -188,9 +201,24 @@ nav * {
 /* SEZIONE IMMAGINE E TESTO 50-50 MA CON FONDO BLU */
 
 
-.blue{
+.sfondo-blu{
   background-color: rgb(16, 34, 87);
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+
+/* SEZIONE COME L HEADER */
+
+
+
+.block::after{
+  display: grid;
+  content: '';
+  clear: both;
+}
+
+.test .img-header{
+  position: relative;
 }
