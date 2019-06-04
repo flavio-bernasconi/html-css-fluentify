@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 p{
-
   line-height: 2rem;
 }
+a{
+  color: black;
+}
+
+
 .left {
   float:left;
 }
@@ -96,7 +100,7 @@ nav * {
 .img-text-header{
   margin-top: 60px;
 }
-.text-header > h1{
+header .text-header > h1{
   margin-bottom: 90px;
 }
 
@@ -202,16 +206,12 @@ nav * {
 
 
 .sfondo-blu{
-  background-color: rgb(16, 34, 87);
+  background-color: #0d325a;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
-
-
-/* SEZIONE COME L HEADER */
-
-
+.sfondo-blu .text-header p{
+  margin: 40px 0;
+}
 
 .block::after{
   display: grid;
@@ -219,6 +219,11 @@ nav * {
   clear: both;
 }
 
-.test .img-header{
+.test {
   position: relative;
+}
+.test .img-header{
+  position: absolute;
+  bottom: 0;
+  right: 0
 }
